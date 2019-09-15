@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>The jQuery Example</title>
+
+    <h2>jQuery-AJAX in FLASK. Execute function on button click</h2>  
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+    <script type=text/javascript> $(function() { $("#speak").click(function (event) { $.getJSON('/speak', { },
+    function(data) { }); return false; }); }); 
+    </script> 
+
+    <script type=text/javascript> $(function() { $("#finish").click(function (event) { $.getJSON('/finished', { },
+        function(data) { }); return false; }); }); 
+    </script>
+</head>
+
+<body>        
+        <input type = "button" id = "speak" value = "Speak" />
+        <input type = "button" id = "finish" value = "Finish"/>
+
+        <p>Here is my variable: {{ variable }}</p>
+</body>    
+
+</html>
