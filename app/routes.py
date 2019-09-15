@@ -6,7 +6,7 @@ import remi.gui as gui
 from remi import start, App
 import numpy as np
 
-speech_key, service_region = "e4e69d91801245bdbc350d3351db3238", "canadacentral"
+speech_key, service_region = "Enter_key_here", "canadacentral"
 speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
 speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config)
 
