@@ -1,4 +1,4 @@
-# HTN 2019
+# Dysleducate
 Project for Hack the North 2019.
 
 Members:
